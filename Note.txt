@@ -1,0 +1,28 @@
+java Output--
+system.out.println()
+system.out.print()
+
+
+
+\src
+javac Main.java - > .class file generated
+java Main - > it will compile the .class file
+
+
+class First{
+    public static void main(String [] args){
+        System.out.println("First")
+    }
+}
+public - > Access moidifier
+Static - > allow to call this method without creating an object of class
+void -> return type
+main -> Fucniton name
+String [] args - > 
+
+System.out.println()
+|       |        |
+
+Class   object   method in print stream 
+        of print
+         Stream
