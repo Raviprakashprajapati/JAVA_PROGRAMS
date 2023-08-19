@@ -254,6 +254,7 @@ public class Array1 {
         }
         System.out.println("First repeated value is " + target);
         
+        
 
     }
 }
