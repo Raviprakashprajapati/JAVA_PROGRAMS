@@ -1,31 +1,50 @@
+class Circle{
+    int radius;
 
-class Template1{
-    public String a = "public access";
-}
+    Circle()
+    {
 
-class Template2{
-    private String b = "private access";
-}
-class Template3{
-    protected String c = "protected access";
+    }
 
-    void print(){
-        System.out.println("template 3 acess template1 public");
+    Circle(int r){
+        radius = r;
+    }
+
+    double area(){
+        return Math.PI*radius*radius;
     }
 
 }
+
+class Cylinder extends Circle{
+    int height;
+
+    Cylinder(int r,int h)
+    {
+        // super(r);
+        radius = r;
+        height = h;
+
+    }
+
+    double volume(){
+        return Math.PI*radius*radius*height;
+    }
+}
+
+
 
 public class Ravi {
     public static void main(String[] args) {
 
-        Template1  obj1 = new Template1();
-        System.out.println(obj1.a);
+        Cylinder a = new Cylinder(3, 78);
+        System.out.println("arae of circle " + a.area());
+        System.out.println("vol of cylinder " + a.volume());
 
-          Template3 obj3 = new Template3();
-        System.out.println(obj3.c);
-        obj3.print();
+            
 
-        // Template2 obj2 = new Template2();
-        // System.out.println(obj2.b);
+        
     }
 }
+
+  

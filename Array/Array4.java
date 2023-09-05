@@ -87,13 +87,15 @@ public class Array4 {
 
 
         // sum of index l=1 to r=n where 1 base indexing ---
-        int arr[] = {10,20,30,40,50};
-        int left=0;
-        int right=4;
-        int value = sumOfRangeIndex(arr,left,right);
-        printArray(arr);
-        System.out.println("sum of index "+left+" to " +right+" : " + value);
+        // int arr[] = {10,20,30,40,50};
+        // int left=0;
+        // int right=4;
+        // int value = sumOfRangeIndex(arr,left,right);
+        // printArray(arr);
+        // System.out.println("sum of index "+left+" to " +right+" : " + value);
     
+
+        System.out.println("a"+5);
 
 
 
