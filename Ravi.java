@@ -1,50 +1,74 @@
-class Circle{
-    int radius;
-
-    Circle()
-    {
-
-    }
-
-    Circle(int r){
-        radius = r;
-    }
-
-    double area(){
-        return Math.PI*radius*radius;
-    }
-
-}
-
-class Cylinder extends Circle{
-    int height;
-
-    Cylinder(int r,int h)
-    {
-        // super(r);
-        radius = r;
-        height = h;
-
-    }
-
-    double volume(){
-        return Math.PI*radius*radius*height;
-    }
-}
-
-
+import java.util.Scanner;
 
 public class Ravi {
+
+    static boolean prime(int a)
+    {
+        boolean flag = false;
+        for(int i=2;i<=a-1;i++){
+                if(a%i==0)
+                {
+                    flag = true;
+                }
+        }
+        return flag;
+
+        }
+
     public static void main(String[] args) {
-
-        Cylinder a = new Cylinder(3, 78);
-        System.out.println("arae of circle " + a.area());
-        System.out.println("vol of cylinder " + a.volume());
-
-            
-
         
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println(prime(7));
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
     }
+
 }
 
-  
