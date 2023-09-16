@@ -1,3 +1,5 @@
+
+
 class LibraryBook{
     public String book[] = new String[100];
     public int index=0;
@@ -57,20 +59,8 @@ public class LIBRARY {
         
 
         LibraryBook l1 = new LibraryBook();
-        l1.addBook("python");
-        l1.addBook("java");
-        l1.addBook("ruby");
-        l1.display();
-        l1.issueBook("ruby");
-        l1.display();
-        l1.returnBook("ruby");
-        l1.display();
-        l1.addBook("javascript");
-        l1.addBook("html");
-        l1.addBook("css");
-        l1.display();
-        l1.issueBook("html");
-        l1.display();
+        
+   
 
         
 

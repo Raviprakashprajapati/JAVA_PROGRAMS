@@ -1,0 +1,2 @@
+100 javascript  896
+200 python  896
