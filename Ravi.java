@@ -13,20 +13,25 @@ public class Ravi {
 
 
 
-        int currentBalance = 2000;
-        int transaction = 100;
-        if(currentBalance >=2000)
-        {
-            currentBalance+=transaction;
-            System.out.println(currentBalance);
-        }
-        else
-        {
+        // int currentBalance = 2000;
+        // int transaction = 100;
+        // if(currentBalance >=2000)
+        // {
+        //     currentBalance+=transaction;
+        //     System.out.println(currentBalance);
+        // }
+        // else
+        // {
             
-            currentBalance-=currentBalance/100;
-            System.out.println("2000 limit exhausted");
-            System.out.println(currentBalance);
-        }
+        //     currentBalance-=currentBalance/100;
+        //     System.out.println("2000 limit exhausted");
+        //     System.out.println(currentBalance);
+        // }
+
+
+       boolean result =  2>4 ? true:false;
+       System.out.println(result);
+
 
 
        
