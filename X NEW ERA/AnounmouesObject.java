@@ -16,7 +16,6 @@ public class AnounmouesObject {
         // Base b = new Base(); //it store the referce of creeting object
         // new Base(); //it create object
         
-        Base b;
-        System.out.println(b);
+       new Base().show();
     }
 }

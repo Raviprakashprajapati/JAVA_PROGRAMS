@@ -1,23 +1,15 @@
+import java.io.File;
+import java.io.FileWriter;
 
 public class Ravi {
     public static void main(String[] args) {
 
-        // int age = 80;
-        // if(age>17 && age<79)
-        // {
-        //     System.out.println("person can vote");
-        // }
-        // else{
-        //     System.out.println("person can't vote");
-        // }
 
-
-
-        // int currentBalance = 2000;
-        // int transaction = 100;
+        // int currentBalance = 1800;
+        // int amountCredit = 100;
         // if(currentBalance >=2000)
         // {
-        //     currentBalance+=transaction;
+        //     currentBalance+=amountCredit;
         //     System.out.println(currentBalance);
         // }
         // else
@@ -29,8 +21,38 @@ public class Ravi {
         // }
 
 
-       boolean result =  2>4 ? true:false;
-       System.out.println(result);
+        try {
+            File fp = new File("currentFile.txt");
+        // fp.createNewFile();
+
+        File fw = new File("EditFile.txt");
+        // FileWriter fw = new FileWriter("EditFile.txt");
+        // fw.createNewFile();
+        // fw.close();
+        
+        if(fp.exists())
+        {
+            fp.delete();
+            boolean rename = fw.renameTo(fp);
+            if(rename)
+            {
+                System.out.println("rename done");
+            }
+            else{
+                System.out.println("Not");
+            }
+        }
+
+
+
+            
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+
+
+  
 
 
 
