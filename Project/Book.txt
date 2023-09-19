@@ -1,0 +1,4 @@
+500 operatingsystem gandhi 234 667
+100 java ravi 234 999
+200 python dennis 567 789
+400 generalknowledge sauravsingh 223 110

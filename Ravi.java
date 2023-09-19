@@ -1,56 +1,39 @@
-import java.io.File;
-import java.io.FileWriter;
+
 
 public class Ravi {
+
+    static void insert(int []arr,int index,int value)
+    {
+        
+        System.out.println();
+        for(int i=arr.length;i>index;i--)
+        {
+            arr[i+1] = arr[i];
+        }
+        arr[index] = value;
+        for (int i : arr) {
+            System.out.print(i+ "   ");
+        }
+
+    }
     public static void main(String[] args) {
 
+        int arr[] = new int[6];
+        arr[0] = 10;
+        arr[1]=20;
+        arr[2]=30;
+        arr[3]=40;
+        for (int i : arr) {
+            System.out.print(i+"   ");
+        }
 
-        // int currentBalance = 1800;
-        // int amountCredit = 100;
-        // if(currentBalance >=2000)
-        // {
-        //     currentBalance+=amountCredit;
-        //     System.out.println(currentBalance);
-        // }
-        // else
-        // {
-            
-        //     currentBalance-=currentBalance/100;
-        //     System.out.println("2000 limit exhausted");
-        //     System.out.println(currentBalance);
-        // }
-
-
-        try {
-            File fp = new File("currentFile.txt");
-        // fp.createNewFile();
-
-        File fw = new File("EditFile.txt");
-        // FileWriter fw = new FileWriter("EditFile.txt");
-        // fw.createNewFile();
-        // fw.close();
+        insert(arr, 2, 444);
         
-        if(fp.exists())
-        {
-            fp.delete();
-            boolean rename = fw.renameTo(fp);
-            if(rename)
-            {
-                System.out.println("rename done");
-            }
-            else{
-                System.out.println("Not");
-            }
-        }
 
 
 
-            
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-
-
+      
+        
 
   
 
