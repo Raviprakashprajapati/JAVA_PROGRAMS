@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 
@@ -398,70 +397,55 @@ public class FileLibraray {
 
     public static void main(String[] args) {
 
-        // Book store = new Book();
+        Book store = new Book();
 
-        // try (Scanner scan = new Scanner(System.in)) {
+        try (Scanner scan = new Scanner(System.in)) {
 
-        //     while (true) {
-        //         System.out.println("\n--------------------------------");
+            while (true) {
+                System.out.println("\n--------------------------------");
 
-        //         System.out.println("1: Display Books");
-        //         System.out.println("2: Add Book");
-        //         System.out.println("3: Search Book By ID");
-        //         System.out.println("4: Modify Book By ID");
-        //         System.out.println("5: Delete Book By ID");
-        //         System.out.println("6: Delete File");
-        //         System.out.println("7: Exit Code");
-        //         System.out.println("Enter your choice:");
-        //         int choice = scan.nextInt();
-        //         System.out.println("--------------------------------");
+                System.out.println("1: Display Books");
+                System.out.println("2: Add Book");
+                System.out.println("3: Search Book By ID");
+                System.out.println("4: Modify Book By ID");
+                System.out.println("5: Delete Book By ID");
+                System.out.println("6: Delete File");
+                System.out.println("7: Exit Code");
+                System.out.println("Enter your choice:");
+                int choice = scan.nextInt();
+                System.out.println("--------------------------------");
 
-        //         switch (choice) {
-        //             case 1:
-        //                 displayBookMain(store);
-        //                 break;
-        //             case 2:
-        //                 addBookMain(store);
-        //                 break;
-        //             case 3:
-        //                 searchBookByIdMain(store);
-        //                 break;
-        //             case 4:
-        //                 modifyBookByIdMain(store);
-        //                 break;
-        //             case 5:
-        //                 deleteBookByIdMain(store);
-        //                 break;
-        //             case 6:
-        //                 deleteFileMain(store);
-        //                 break;
-        //             case 7:
-        //                 return;
-        //             default:
-        //                 System.out.println("Enter a valid choice");
-        //                 break;
+                switch (choice) {
+                    case 1:
+                        displayBookMain(store);
+                        break;
+                    case 2:
+                        addBookMain(store);
+                        break;
+                    case 3:
+                        searchBookByIdMain(store);
+                        break;
+                    case 4:
+                        modifyBookByIdMain(store);
+                        break;
+                    case 5:
+                        deleteBookByIdMain(store);
+                        break;
+                    case 6:
+                        deleteFileMain(store);
+                        break;
+                    case 7:
+                        return;
+                    default:
+                        System.out.println("Enter a valid choice");
+                        break;
 
-        //         }
-        //     }
-        // }
-
-
-        try {
-            File fp = new File("Book.txt");
-        String updateline = "112 java ";
-        // FileWriter fw = new FileWriter(fp);
-        // fw.write(updateline, , 0);
-        Scanner scan = new Scanner(fp);
-        // System.out.println(scan.nextLine());
-        FileReader read = new FileReader("Book.txt");
-        System.out.println(read.read());
-        scan.close();
-
-            
-        } catch (Exception e) {
-            
+                }
+            }
         }
 
+
+        
 
 
 

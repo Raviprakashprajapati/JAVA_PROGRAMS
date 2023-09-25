@@ -23,10 +23,10 @@ public class TRYCATCH {
         try {
 
             int result = 454/num;
-            // throw new ArithmeticException("zero se kyu kar rh hai");
+         
             throw new MyException();
             
-        } catch (Exception e) {
+        } catch (MyException e) {
             System.out.println(e.toString());
         }
 

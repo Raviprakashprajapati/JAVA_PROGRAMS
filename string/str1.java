@@ -15,13 +15,51 @@ class str1 {
  
     public static void main(String[] args) {
 
-          String str = "hello my name is raviprakash i  am bca student";
+        //   String str = "hello" ;
+        //   String str2 = "world";
+        //   str2 = "hello";
+        // //   System.out.println(str.equals(str2));
+        // //   System.out.println(str.charAt(0));
+        // //   System.out.println(str.split("e"));
+        //   var arr = str.split("e");
+        //   for (String string : arr) {
+        //     System.out.println(string);
+        //   }
+        //   System.out.println(str.contains("o"));
+        //   System.out.println(str.indexOf("h"));
 
-         for(int i = 0; i <str.length();i++)
-         {}
+         
+        // string buffer---
+        // StringBuffer str = new StringBuffer("hello");
+        // String s = str.toString();
+        // str.reverse();
+        // System.out.println(str);
 
-         System.out.println(str.split(" "));
-       
+        String str = "aaabc";
+        int index = 1;
+        char ch = 'a';
+        //left side
+        int length = 0;
+        
+        for(int i=index-1;i>=0;i--)
+        {
+            if(str.charAt(i)==ch){
+                length= str.length()-1;
+                break;
+            }
+        }
+
+        //right side---
+        for(int i=index+1;i<str.length();i++)
+        {
+            if(str.charAt(i)==ch){
+                length= str.length()-1;
+                break;
+            }
+
+        }
+        System.out.println(length);
+
    
 
       

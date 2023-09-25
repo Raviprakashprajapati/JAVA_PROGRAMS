@@ -12,8 +12,10 @@ public class lits01 {
 
     static void display(Node temp)
     {
+        
         while(temp!=null)
         {
+ 
             System.out.print(temp.data+"  ");
             temp=temp.next;
         }
@@ -31,7 +33,13 @@ public class lits01 {
     static void reverseDisplay(Node temp){
         if(temp==null) return;
         reverseDisplay(temp.next);
-    System.out.print(temp.data+"  ");        
+             System.out.print(temp.data+"  ");        
+    }
+
+    static void findingIntersection(Node temp1,Node temp2)
+    {
+        
+
     }
 
 
@@ -45,18 +53,17 @@ public class lits01 {
         a.next = b;
         b.next=  c;
         // System.out.println(a.next.data); 
-
-
         // display meth1---
         // System.out.println(a.data);
         // System.out.println(a.next.data);
         // System.out.println(a.next.next.data);
         
+        
 
         // display meth2----
             display(a);
-            // recursiveDisplay(a);
-            reverseDisplay(a);
+       
+
 
 
 

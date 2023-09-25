@@ -1,3 +1,4 @@
+import practive01.Base;
 
 class Base{
     public int pu=124;

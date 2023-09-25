@@ -1,4 +1,5 @@
-//node is like user defined data type
+
+
 class Node {
     int data;
     Node next;
@@ -8,7 +9,7 @@ class Node {
     }
 }
 
-// linkedlist is lie data structre
+
 class LinkedList {
     Node head = null;
     Node tail = null;
@@ -153,18 +154,12 @@ class LinkedList {
         }
     }
 
-    void deleteSecondLastNode(){
-
-        Node temp = head;
-
-    }
-
 
 }
 
 
 // main class
-public class Linklist_DSA{
+public class Singly01 {
     public static void main(String[] args) {
 
         LinkedList x = new LinkedList();
@@ -173,11 +168,8 @@ public class Linklist_DSA{
         x.insertAtEnd(10);
         x.insertAtEnd(20);
         x.display();
-
-        LinkedList y = new LinkedList();
-        y.insertAtBegin(100);
-        y.insertAtBegin(200);
-        y.display();
+        x.deleteAtEnd();
+        x.display();
      
 
     }
