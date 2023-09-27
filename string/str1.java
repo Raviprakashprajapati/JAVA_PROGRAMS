@@ -1,3 +1,6 @@
+import java.util.Map;
+import java.util.Stack;
+
 class str1 {
 
     static boolean acronym(String words[], String str) {
@@ -35,30 +38,36 @@ class str1 {
         // str.reverse();
         // System.out.println(str);
 
-        String str = "aaabc";
-        int index = 1;
-        char ch = 'a';
-        //left side
-        int length = 0;
+        // String str = "aaabc";
+        // int index = 1;
+        // char ch = 'a';
+        // //left side
+        // int length = 0;
         
-        for(int i=index-1;i>=0;i--)
-        {
-            if(str.charAt(i)==ch){
-                length= str.length()-1;
-                break;
-            }
-        }
+        // for(int i=index-1;i>=0;i--)
+        // {
+        //     if(str.charAt(i)==ch){
+        //         length= str.length()-1;
+        //         break;
+        //     }
+        // }
 
-        //right side---
-        for(int i=index+1;i<str.length();i++)
-        {
-            if(str.charAt(i)==ch){
-                length= str.length()-1;
-                break;
-            }
+        // //right side---
+        // for(int i=index+1;i<str.length();i++)
+        // {
+        //     if(str.charAt(i)==ch){
+        //         length= str.length()-1;
+        //         break;
+        //     }
 
-        }
-        System.out.println(length);
+        // }
+        // System.out.println(length);
+
+      
+
+
+
+       
 
    
 

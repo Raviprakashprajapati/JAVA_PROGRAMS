@@ -15,7 +15,7 @@ public class Trycatch2 {
         
        } catch (Exception e) {
         
-        System.out.println(e);
+        System.out.println("Error "+  e);
        }
        finally{
         System.out.println("finally");
