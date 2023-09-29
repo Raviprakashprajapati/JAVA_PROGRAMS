@@ -1,4 +1,3 @@
-500 operatingsystem gandhi 234 667
-100 java ravi 234 999
-200 python dennis 567 789
-400 generalknowledge sauravsingh 223 110
+100 general snake 234 888
+200 python snake 234 888
+300 java snake 234 888

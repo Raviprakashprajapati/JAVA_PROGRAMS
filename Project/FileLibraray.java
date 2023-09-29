@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Book {
@@ -198,6 +200,7 @@ class Book {
         }
     }
 
+
     public void modifyBookById(int id) {
         try {
 
@@ -206,6 +209,7 @@ class Book {
             if (fp.exists()) {
 
                 Scanner scan = new Scanner(fp);
+                // try (Scanner scan = new Scanner(fp)) {
 
                 // if file has nothing
                 if (scan.hasNextLine()) {
@@ -216,9 +220,11 @@ class Book {
                         String line = scan.nextLine();
                         String[] split = line.split(" ");
 
-                        // if ID
+                        // if ID match
                         if (id == Integer.parseInt(split[0])) {
 
+
+                            //display match book first---
                             System.out.println("\nBook is present ");
                             for (int i = 0; i < 84; i++) {
                                 System.out.print("=");
@@ -238,9 +244,10 @@ class Book {
                                 System.out.print("=");
                             }
 
-                            //addind new field
-                            System.out.println("\n[ Modify Book ]");
+
+                            // addind new field
                             Scanner sc = new Scanner(System.in);
+                            System.out.println("\n[ Modify Book ]");
                             System.out.println("Enter New Book Id: ");
                             int ide = sc.nextInt();
                             sc.nextLine();
@@ -254,14 +261,17 @@ class Book {
                             int price = sc.nextInt();
 
                             String updateData = String.format("%d %s %s %d %d",ide,name,author,page,price);
-                            
-                            //open file for write updated data
-                            
+                            sc.close();
+
+
                            
 
                             System.out.println("Modify Done\n");
-                            sc.close();
+                           
                             break;
+
+
+                            
                             
 
                         }
@@ -275,7 +285,9 @@ class Book {
                 }
                 System.out.println("Book with "+id+ " ID is not present \n" );
 
+            // }
                 scan.close();
+
 
             }
 
@@ -290,20 +302,10 @@ class Book {
 
     }
 
+
+
+
 }// Book class end here
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

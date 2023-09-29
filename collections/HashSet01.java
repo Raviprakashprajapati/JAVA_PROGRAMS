@@ -13,6 +13,7 @@ public class HashSet01 {
         System.out.println(hh);
         int startingPoint = 0;
         for (Integer i : hh) {
+            //starating points--
             if(!hh.contains(i-1)){
                 // startingPoint = i;
                 if(startingPoint>i)
